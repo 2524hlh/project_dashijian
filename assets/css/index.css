@@ -1,0 +1,25 @@
+.layui-header ul a{
+    color: #fff;
+}
+
+.layui-nav-img{
+    width: 40px;
+    height: 40px;
+}
+
+
+.layui-side .userinfo{
+    padding-left: 30px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 12px;
+}
+
+.layui-layout-admin .layui-footer{
+    background-color: #eee;
+}
+
+.layui-footer{
+    text-align: center;
+    font-size: 12px;
+}
