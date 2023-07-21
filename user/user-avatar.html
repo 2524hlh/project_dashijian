@@ -1,11 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>更换头像</title>
+    <link rel="stylesheet" href="../assets/lib/layui-v2.6.8/layui/css/layui.css">
+    <link rel="stylesheet" href="../assets/lib/cropperjs-main/dist/cropper.min.css">
+    <link rel="stylesheet" href="../assets/css/user/user-avatar.css">
 </head>
+
 <body>
-    更换头像
+    <div class="layui-card">
+        <div class="layui-card-header">更换头像</div>
+        <div class="layui-card-body">
+            <!-- cropper -->
+            <div class="row1">
+                <div class="cropper-box">
+                    <img src="../assets/images/user.jpg" id="image">
+                </div>
+                <div class="preview-box">
+                    <div>
+                        <div class="img-preview w100"></div>
+                        <p class="size">100 x 100</p>
+                    </div>
+                    <div>
+                        <div class="img-preview w50"></div>
+                        <p class="size">50 x 50</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row2">
+                <input type="file" id="file" accept="image/png,image/jpeg">
+                <button type="button" class="layui-btn" id="btnChooseImg">上传</button>
+                <button type="button" class="layui-btn layui-btn-danger" id="btnUpload">保存</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/lib/layui-v2.6.8/layui/layui.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../assets/lib/cropperjs-main/dist/cropper.min.js"></script>
+    <script src="../assets/lib/cropperjs-main/dist/jquery-cropper.min.js"></script>
+    <script src="../assets/js/baseAPI.js"></script>
+    <script src="../assets/js/user/user-avatar.js"></script>
 </body>
+
 </html>
