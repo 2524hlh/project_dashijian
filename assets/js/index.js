@@ -11,9 +11,7 @@ $(function () {
         })
     })
 
-    function logn(){
-        console.log(1);
-    }
+    
 })
 
 function getUserInfo() {
@@ -36,5 +34,7 @@ function renderAvatar(user) {
         $('.layui-nav-img').attr('src', user.user_pic)
     }
 }
+
+
 
 

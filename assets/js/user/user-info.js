@@ -17,7 +17,8 @@ $(function(){
         $.ajax({
             type:'post',
             url:'/my/userinfo',
-            data:form.val('formUserInfo'),
+            data:$(this).serialize(),
+            //form.val('formUserInfo')
             success:function(res){
                 if(res.status!==0) return layer.msg('修改用户信息失败')
                 layer.msg('更新用户信息成功')
